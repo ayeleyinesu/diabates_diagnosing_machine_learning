@@ -1,0 +1,16 @@
+Feature Name,Type,Scaling / Encoding,Description
+Pregnant,Float,Standard Scaler,Number of times pregnant.
+Glucose,Float,Standard Scaler,"Plasma glucose concentration (imputed, capped)."
+Diastolic_BP,Float,Standard Scaler,"Diastolic blood pressure (imputed, capped)."
+Skin_Fold,Float,Standard Scaler,"Triceps skin fold thickness (imputed, capped)."
+Serum_Insulin,Float,Standard Scaler,"2-Hour serum insulin (imputed, capped)."
+BMI,Float,Standard Scaler,"Body mass index (imputed, capped)."
+Diabetes_Pedigree,Float,Standard Scaler,Diabetes pedigree function (capped).
+Age,Float,Standard Scaler,Age in years (capped).
+Age_Group_Encoded,Integer,Label Encoding,"Encoded age group feature (Ordinal: e.g., Young, Middle-Aged, Senior)."
+BMI_Category_Normal,Binary,One-Hot Encoding,1 if BMI is Normal (18.5-24.9); 0 otherwise.
+BMI_Category_Overweight,Binary,One-Hot Encoding,1 if BMI is Overweight (25-29.9); 0 otherwise.
+BMI_Category_Obese,Binary,One-Hot Encoding,1 if BMI is Obese (30+); 0 otherwise.
+Glucose_Category_Prediabetes,Binary,One-Hot Encoding,1 if Glucose is Prediabetic (100-125 mg/dL); 0 otherwise.
+Glucose_Category_Diabetes_Level,Binary,One-Hot Encoding,1 if Glucose indicates Diabetes (126+ mg/dL); 0 otherwise.
+Class,Integer,Target Variable,"0 = Non-Diabetic, 1 = Diabetic. (Balanced using SMOTE)."
